@@ -19,7 +19,7 @@ from PIL import Image
 from wordcloud import STOPWORDS, WordCloud
 import io
 import urllib, base64
-from mangum import Mangum
+# from mangum import Mangum
 
 tags_metadata = [
     {
@@ -41,7 +41,7 @@ app = FastAPI(
     openapi_url="/cwc/api/v1/coreapi.json",
     log_config=None
 )
-handler = Mangum(app=app)
+# handler = Mangum(app=app)
 
 # app.add_middleware(
 # CORSMiddleware, allow_origins=["*"], allow_methods=["*"], allow_headers=["*"]
